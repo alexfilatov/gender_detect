@@ -23,7 +23,10 @@ defmodule GenderDetect.Mixfile do
   defp deps do
     [
       {:nimble_csv, "~> 0.4"},
-      {:remix, only: :dev},
+      {:cowboy, "~> 1.0.0"},
+      {:plug, "~> 1.0"},
+      {:jason, "~> 1.0"},
+      {:remix, ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 0.5", only: [:dev], runtime: false}
     ]
   end
