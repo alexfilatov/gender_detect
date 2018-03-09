@@ -1,18 +1,8 @@
 defmodule GenderDetect do
-  @moduledoc """
-  Documentation for GenderDetect.
-  """
+  use Application
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> GenderDetect.hello
-      :world
-
-  """
-  def hello do
-    :world
+  def start(_type, _args) do
+    GenderDetect.Supervisor.start_link()
   end
+
 end
