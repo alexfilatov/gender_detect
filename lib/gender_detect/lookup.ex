@@ -1,6 +1,9 @@
 defmodule GenderDetect.Lookup do
   @ets_name :people_name_stats
 
+  def by_name(""), do: by_name(nil)
+  def by_name(nil), do: %{name: "", status: "specify_name"}
+
   def by_name(name) do
     name = name
     |> String.downcase()
