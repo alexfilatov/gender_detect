@@ -28,6 +28,7 @@ https://gender-detect-ex.herokuapp.com/detect?name=christina
 ```
 $ git clone https://github.com/alexfilatov/gender_detect.git
 $ cd gender_detect
+$ mix deps.get
 $ iex -S mix
 ```
 
